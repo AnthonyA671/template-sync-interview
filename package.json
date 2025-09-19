@@ -1,12 +1,16 @@
 {
   "name": "template-sync-interview",
   "version": "1.0.0",
-  "description": "Template Synchronization Coding Challenge",
+  "description": "Template Synchronization Coding Challenge - 30 Minutes",
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:concurrent": "jest -t 'Concurrent'",
+    "test:cache": "jest -t 'Cache'",
+    "test:retry": "jest -t 'Retry'",
+    "test:verbose": "jest --verbose",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
